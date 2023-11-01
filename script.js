@@ -2,22 +2,24 @@ const name = document.getElementById('name');
 const phoneNumber = document.getElementById('phone');
 const email = document.getElementById('email');
 const dropdown = document.getElementById('dropdown');
-const subscribe = document.getElementById('subscribe');
+const subscribeForm = document.getElementById('subscribeForm');
 const nameError = document.getElementById('nameError');
 const phoneError = document.getElementById('phoneError');
 const emailError = document.getElementById('emailError');
 const dropdownError = document.getElementById('dropdownError');
-const thankyou = document.getElementById('thankyou');
+const thankyouModal = document.getElementById('thankyou');
+const modalText = document.querySelector('.modal-text');
+const backButton = document.getElementById('back');
 
-subscribe.addEventListener('click', handleSubscribe); //might need to change the click to submit
-function handleSubscribe(e) {
+
+function handleSubscribe() {
+    console.log("handlesubscibe");
     e.preventDefault();
     validateName(name);
-    validatePhone(phone);
+    validatePhone(phoneNumber);
     validateEmail(email);
-    // thankyouModal();
 
-    // console.log("handleSubscribe was executed.");
+
 }
 
 
@@ -66,11 +68,16 @@ function validateEmail(email) {
     }
 }
 
-function thankyouModal() {
-    if (nameError.style.display === 'none' && phoneError.style.display === 'none' && emailError.style.display === 'none') {
-        return thankyou.style.display = 'block';
-    }
+function showThankYouModal() {
+    thankyouModal.style.display = 'block';
+    modalText.textContent = 'Thank you for your submission!';
 }
+
+backButton.addEventListener('click', function () {
+    thankyouModal.style.display = 'none';
+    subscribeForm.reset();
+});
+
 
 
 

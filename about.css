@@ -20,6 +20,7 @@ nav {
     top: 0;
     padding: 8px 0;
     background-color: black;
+    z-index: 1;
 }
 
 .logo a {

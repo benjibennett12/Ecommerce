@@ -15,7 +15,6 @@
         </div>
         <div class="pages">
             <ul>
-                <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="about.html">About Us</a></li>
                 <li class="nav-item"><a href="store.html">Store</a></li>
                 <li class="nav-item"><a href="contact.html">Contact Us</a></li>
@@ -32,11 +31,11 @@
     <section>
         <div class="container">
             <h1>Subscribe to Us</h1>
-            <p>Submit your information here for monthly deals and exclsuive offers</p>
+            <p>Submit your information here for monthly deals and exclusive offers</p>
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Send Your Feedback</h3>
-                    <form id="subscribe">
+                    <form onsubmit="handleSubscribe()" id="subscribe">
 
 
                         <div class="input-row">
@@ -47,7 +46,7 @@
                             </div>
                             <div class="input-group">
                                 <label>Phone Number</label>
-                                <input id="phone" maxlength="10" pattern="\d{10}" type="text" placeholder="234-342-6754"
+                                <input id="phone" maxlength="12" pattern="\d{12}" type="text" placeholder="234-342-6754"
                                     required>
                                 <div class="error-message" id="phoneError"></div>
                             </div>
@@ -74,7 +73,7 @@
                         <label>Comment Section</label>
                         <textarea rows="3" placeholder="Your Message"></textarea>
 
-                        <button type="submit" id="subscribe">SEND</button>
+                        <button type="submit" id="subscribeForm">SEND</button>
 
                     </form>
                 </div>
