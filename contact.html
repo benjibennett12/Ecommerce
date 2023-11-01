@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="modal.css" rel="stylesheet" type="text/css">
+</head>
+<header>
+    <nav>
+        <div class="logo">
+            <h1><a href="index.html">Monochrome</a></h1>
+        </div>
+        <div class="pages">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="about.html">About Us</a></li>
+                <li class="nav-item"><a href="store.html">Store</a></li>
+                <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="buttons">
+            <button class-btn1> Sign Up</button>
+            <button class-btn2> Log In</button>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>Subscribe to Us</h1>
+            <p>Submit your information here for monthly deals and exclsuive offers</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send Your Feedback</h3>
+                    <form id="subscribe">
+
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" placeholder="Name Here" required>
+                                <div class="error-message" id="nameError" style="display: none;"></div>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone Number</label>
+                                <input id="phone" maxlength="10" pattern="\d{10}" type="text" placeholder="234-342-6754"
+                                    required>
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input id="email" type="text" placeholder="john123@google.com" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            <div class="input-group">
+                                <label>Department</label>
+                                <select row="5" id="dropdown" required>
+                                    <option value="">None</option>
+                                    <option value="clothing">Clothing</option>
+                                    <option value="shoe">Shoe</option>
+                                    <option value="Acessories">Acessories</option>
+                                </select>
+                                <div class="error-message" id="dropdownError"></div>
+                            </div>
+
+                        </div>
+                        <label>Comment Section</label>
+                        <textarea rows="3" placeholder="Your Message"></textarea>
+
+                        <button type="submit" id="subscribe">SEND</button>
+
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Me</h3>
+
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>awcstore@menswork.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td>123-456-7890</td>
+                        </tr>
+                        <tr>
+                            <td>Address:</td>
+                            <td>Bronx, New York</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div id="thankyou" class="modal-content">
+            <h1 class="modal-text"></h1>
+            <button id="back" class="back btn">back</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
