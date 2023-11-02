@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
     <link href="modal.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <header>
     <nav>
@@ -27,7 +29,7 @@
     </nav>
 </header>
 
-<body>
+<main>
     <section>
         <div class="container">
             <h1>Subscribe to Us</h1>
@@ -35,19 +37,18 @@
             <div class="contact-box">
                 <div class="contact-left">
                     <h3>Send Your Feedback</h3>
-                    <form onsubmit="handleSubscribe()" id="subscribe">
+                    <form onsubmit="handleSubscribe(event)" id="subscribe">
 
 
                         <div class="input-row">
                             <div class="input-group">
                                 <label for="name">Name</label>
-                                <input id="name" type="text" placeholder="Name Here" required>
+                                <input id="name" type="text" placeholder="Name Here">
                                 <div class="error-message" id="nameError" style="display: none;"></div>
                             </div>
                             <div class="input-group">
                                 <label>Phone Number</label>
-                                <input id="phone" maxlength="12" pattern="\d{12}" type="text" placeholder="234-342-6754"
-                                    required>
+                                <input id="phone" maxlength="12" type="text" placeholder="234-342-6754">
                                 <div class="error-message" id="phoneError"></div>
                             </div>
                         </div>
@@ -55,12 +56,12 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input id="email" type="text" placeholder="john123@google.com" required>
+                                <input id="email" type="text" placeholder="john123@google.com">
                                 <div class="error-message" id="emailError"></div>
                             </div>
                             <div class="input-group">
                                 <label>Department</label>
-                                <select row="5" id="dropdown" required>
+                                <select row="5" id="dropdown">
                                     <option value="">None</option>
                                     <option value="clothing">Clothing</option>
                                     <option value="shoe">Shoe</option>
@@ -100,11 +101,11 @@
     </section>
     <div class="modal">
         <div id="thankyou" class="modal-content">
-            <h1 class="modal-text"></h1>
+            <h1 class="modal-text">Thank You for Submiting Feedback</h1>
             <button id="back" class="back btn">back</button>
         </div>
     </div>
     <script src="script.js"></script>
-</body>
+    </body>
 
 </html>

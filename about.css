@@ -26,6 +26,7 @@ nav {
 .logo a {
     text-decoration: none;
     color: #fff;
+    margin-left: 15px;
 }
 
 .pages {
@@ -62,7 +63,7 @@ ul {
     font-size: 16px;
 }
 
-/* Add hover effect for btns */
+/* Add hover effect for buttons */
 .nav-item a {
     text-decoration: none;
     margin: 20px;
@@ -87,7 +88,6 @@ ul {
     color: #333;
     font-weight: 500;
     text-align: center;
-
 }
 
 .hero {
@@ -136,7 +136,6 @@ ul {
     background-color: #0055b3;
 }
 
-
 .section2 {
     display: flex;
     justify-content: center;
@@ -146,6 +145,10 @@ ul {
     margin-right: auto;
 }
 
+.section2 .content p {
+    font-weight: 700;
+}
+
 .content,
 .image {
     width: 50%;
@@ -153,6 +156,7 @@ ul {
 
 .content {
     text-align: center;
+    margin-left: auto;
 }
 
 .content p {
@@ -164,17 +168,16 @@ ul {
 
 .image img {
     max-width: 75%;
-    height: 75%;
+    height: auto;
 }
 
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 34px;
-    grid-row-gap: 50px;
+    grid-column-gap: 2%;
+    grid-row-gap: 4%;
     max-width: 100%;
-    max-height: 100%;
 }
 
 .div1 {
@@ -201,6 +204,29 @@ ul {
     grid-area: 2 / 3 / 3 / 4;
 }
 
+.section3 {
+    color: #333;
+    margin-top: 250px;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.section3 img {
+    text-align: center;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.section3 p {
+    text-align: center;
+    align-items: center;
+}
+
+.section3 h1 {
+    text-align: center;
+    align-items: center;
+}
+
 footer p {
     color: #fff;
 }
@@ -225,23 +251,112 @@ footer p {
     margin: 50px;
 }
 
-.section3 {
-    color: #333;
-    margin-top: 250px;
+@media (max-width: 280px) {
+
+    nav {
+        height: 40px;
+        padding: 5px 0;
+    }
+
+    .logo a {
+        font-size: x-small;
+    }
+
+    .nav-item a {
+        font-size: x-small;
+        margin: 10px;
+    }
+
+    body.center-content {
+        position: absolute;
+        top: 200px;
+    }
+
+    .my-footer {
+        padding: 10px;
+    }
+
+    .my-footer .list1 ul,
+    .my-footer .list2 ul,
+    .my-footer .list3 ul {
+        margin: 5px;
+    }
 }
 
-.section3 img {
-    text-align: center;
-    align-items: center;
-    margin-left: 90px;
+@media screen and (max-width: 414px) {
+
+    nav {
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    .logo a {
+        font-size: 16px;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .section1,
+    .section2 {
+        align-items: center;
+    }
+
+    .content,
+    .image {
+        width: 100%;
+    }
+
+    .content p {
+        margin-left: 0;
+    }
+
+    .my-footer .list1 ul,
+    .my-footer .list2 ul,
+    .my-footer .list3 ul {
+        margin: 10px;
+    }
 }
 
-.section3 p {
-    text-align: center;
-    align-items: center;
+@media screen and (min-width: 1024px) {
+
+    .nav-item a {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .content p {
+        margin-left: 200px;
+    }
 }
 
-.section3 h1 {
-    text-align: center;
-    align-items: center;
+@media screen and (min-width: 430px) and (max-width: 647px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    .content,
+    .image {
+        width: 100%;
+    }
+
+    .content p {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .my-footer .list1 ul,
+    .my-footer .list2 ul,
+    .my-footer .list3 ul {
+        margin: 10px;
+    }
 }

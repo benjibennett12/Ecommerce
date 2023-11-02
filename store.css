@@ -26,6 +26,7 @@ nav {
 .logo a {
     text-decoration: none;
     color: #fff;
+    margin-left: 15px;
 }
 
 .pages {
@@ -62,7 +63,6 @@ ul {
     font-size: 16px;
 }
 
-/* Add hover effect for btns */
 .nav-item a {
     text-decoration: none;
     margin: 20px;
@@ -85,6 +85,15 @@ ul {
 .store1 img {
     width: 495px;
     height: 667px;
+}
+
+.store1 .quote p {
+    font-weight: 700;
+    font-size: 20px;
+    width: auto;
+    height: 150px;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 .store1 .quote p {
@@ -138,7 +147,7 @@ ul {
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 25px;
     grid-row-gap: 30px;
 }
@@ -188,6 +197,22 @@ ul {
     grid-area: 3 / 3 / 4 / 4;
 }
 
+.div10 {
+    width: 300px;
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.div11 {
+    width: 300px;
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.div12 {
+    width: 300px;
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+
 .product {
     position: relative;
     display: inline-block;
@@ -212,11 +237,12 @@ ul {
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
+
 
 .my-footer .list1 ul,
 .my-footer .list2 ul,
@@ -224,4 +250,84 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 50px;
+}
+
+@media (max-width: 839px) {
+
+    .store1 {
+        width: 1000px;
+        margin-left: auto;
+    }
+
+    .my-footer {
+        height: auto;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        width: 1500px;
+    }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav-item a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .store1 {
+        margin-top: 100px;
+        width: 900px;
+    }
+
+    .store1 .quote p {
+        font-size: 16px;
+    }
+
+    .titlesection h1 {
+        font-size: 24px;
+        padding-top: 50px;
+    }
+
+    .store2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .store2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .store2 span {
+        font-size: 12px;
+    }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+.my-footer {
+    height: auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.my-footer .list1 ul,
+.my-footer .list2 ul,
+.my-footer .list3 ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
