@@ -57,7 +57,6 @@ ul {
     font-size: 16px;
 }
 
-/* Add hover effect for btns */
 .nav-item a {
     text-decoration: none;
     margin: 20px;
@@ -165,6 +164,24 @@ tr td {
 }
 
 @media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    main {
+        margin-top: 200px;
+    }
+
     .contact-box {
         flex-direction: column;
     }

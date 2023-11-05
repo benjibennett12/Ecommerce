@@ -63,7 +63,6 @@ ul {
     font-size: 16px;
 }
 
-/* Add hover effect for buttons */
 .nav-item a {
     text-decoration: none;
     margin: 20px;
@@ -285,20 +284,6 @@ footer p {
 
 @media screen and (max-width: 414px) {
 
-    nav {
-        height: 60px;
-        padding: 10px 0;
-    }
-
-    .logo a {
-        font-size: 16px;
-    }
-
-    .nav-item a {
-        font-size: 16px;
-        margin: 10px;
-    }
-
     .section1,
     .section2 {
         align-items: center;
@@ -332,7 +317,7 @@ footer p {
     }
 }
 
-@media screen and (min-width: 430px) and (max-width: 647px) {
+@media (max-width: 647px) {
 
     nav {
         flex-direction: column;
@@ -354,9 +339,23 @@ footer p {
         margin-left: 0;
     }
 
-    .my-footer .list1 ul,
-    .my-footer .list2 ul,
-    .my-footer .list3 ul {
-        margin: 10px;
+    .parent {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
     }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5,
+    .div6 {
+        grid-area: auto;
+    }
+}
+
+.my-footer .list1 ul,
+.my-footer .list2 ul,
+.my-footer .list3 ul {
+    margin: 10px;
 }
