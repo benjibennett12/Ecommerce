@@ -156,6 +156,9 @@ ul {
 .content {
     text-align: center;
     margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
 }
 
 .content p {
@@ -250,7 +253,7 @@ footer p {
     margin: 50px;
 }
 
-@media (max-width: 280px) {
+@media screen and (max-width: 280px) {
 
     nav {
         height: 40px;
@@ -317,7 +320,7 @@ footer p {
     }
 }
 
-@media (max-width: 647px) {
+@media screen and (max-width: 647px) {
 
     nav {
         flex-direction: column;
@@ -358,4 +361,36 @@ footer p {
 .my-footer .list2 ul,
 .my-footer .list3 ul {
     margin: 10px;
+}
+
+@media (max-width: 280px) {
+    nav {
+        height: 150px;
+        padding: 5px 0;
+    }
+
+    .logo a {
+        font-size: 12px;/
+    }
+
+    .nav-item a {
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    body.center-content {
+        position: relative;
+        top: 0;
+    }
+
+    .my-footer {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .my-footer .list1 ul,
+    .my-footer .list2 ul,
+    .my-footer .list3 ul {
+        margin: 5px;
+    }
 }

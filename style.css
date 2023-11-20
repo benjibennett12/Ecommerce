@@ -58,7 +58,7 @@ ul {
     background-color: black;
     border: 2px solid #fff;
     border-radius: 5px;
-    padding: 6px;
+    padding: 6px 12px;
     color: #fff;
     font-size: 16px;
 }
@@ -170,10 +170,8 @@ video {
     }
 
     .my-footer {
-        margin-top: 100px;
+        margin-top: 50px;
         height: auto;
-        display: flex;
-        flex-direction: column;
         text-align: center;
     }
 
@@ -193,8 +191,7 @@ video {
     video {
         width: 100%;
         height: auto;
-        margin-top: 140px;
-
+        margin-top: 50px;
     }
 
     .center-content {
@@ -204,48 +201,57 @@ video {
         transform: none;
         width: 100%;
         text-align: center;
-        margin-top: 200px;
+        margin-top: 70px;
         padding: 10px;
     }
 }
 
-
 @media (max-width: 640px) {
-
     nav {
         flex-direction: column;
         align-items: center;
-        height: 130px;
+        height: auto;
     }
 
     .nav-item {
         margin: 10px 0;
         font-size: 16px;
     }
+
+    video {
+        width: 100%;
+        height: auto;
+        margin-top: 200px;
+    }
+
+    .center-content {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 280px) {
     nav {
-        height: 40px;
+        height: 150px;
         padding: 5px 0;
     }
 
-    .logo {
-        font-size: x-small;
+    .logo a {
+        font-size: 12px;/
     }
 
     .nav-item a {
-        font-size: x-small;
+        font-size: 12px;
+        margin: 5px;
     }
 
     body.center-content {
-        position: absolute;
-        top: 200px;
-
+        position: relative;
+        top: 0;
     }
 
     .my-footer {
         padding: 10px;
+        margin-top: 10px;
     }
 
     .my-footer .list1 ul,
@@ -253,6 +259,4 @@ video {
     .my-footer .list3 ul {
         margin: 5px;
     }
-
-
 }

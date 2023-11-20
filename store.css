@@ -112,7 +112,7 @@ ul {
 
 .store2 {
     margin-top: 200px;
-    margin-right: auto;
+    margin-right: 170px;
     margin-left: 170px;
     text-align: center;
 }
@@ -123,7 +123,7 @@ ul {
 }
 
 .store2 span {
-    font-size: x-small;
+    font-size: medium;
     color: black;
 }
 
@@ -134,6 +134,7 @@ ul {
     grid-column-gap: 25px;
     grid-row-gap: 30px;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .div1,
@@ -203,6 +204,7 @@ ul {
 
     .parent {
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
     }
 
     .div1,
@@ -217,7 +219,7 @@ ul {
     .div10,
     .div11,
     .div12 {
-        width: calc(50% - 12.5px);
+        width: 100%
     }
 }
 
@@ -275,6 +277,11 @@ ul {
 }
 
 @media (max-width: 480px) {
+
+    html {
+        width: 100%;
+    }
+
     .nav-item a {
         font-size: 16px;
         margin: 10px;
@@ -311,4 +318,13 @@ ul {
     .parent {
         grid-template-columns: repeat(2, 1fr);
     }
+
+
+    .my-footer .list1 ul,
+    .my-footer .list2 ul,
+    .my-footer .list3 ul {
+        font-size: x-small;
+        margin: 3px;
+    }
+
 }
